@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 
 class UserSeeder extends Seeder
@@ -19,7 +20,7 @@ class UserSeeder extends Seeder
             'email' => 'y@g.com',
             'email_verified_at' => '2020-08-22 04:34:08',
             'avatar' => 'default.PNG',
-            'password' => '12345678',
+            'password' => Hash::make('12345678'),
             'created_at' => '2020-08-22 02:34:08',
             'updated_at' => '2020-08-22 02:34:08',
         ]);
@@ -30,7 +31,7 @@ class UserSeeder extends Seeder
             'email' => 'a@g.com',
             'email_verified_at' => '2021-08-22 04:34:08',
             'avatar' => 'default.PNG',
-            'password' => '12345678',
+            'password' => Hash::make('12345678'),
             'created_at' => '2021-08-22 02:34:08',
             'updated_at' => '2021-08-22 02:34:08',
         ]);
@@ -41,7 +42,7 @@ class UserSeeder extends Seeder
             'email' => 'm@g.com',
             'email_verified_at' => '2022-08-22 04:34:08',
             'avatar' => 'default.PNG',
-            'password' => '12345678',
+            'password' => Hash::make('12345678'),
             'created_at' => '2022-08-22 02:34:08',
             'updated_at' => '2022-08-22 02:34:08',
         ]);
